@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\GroupsAndProviders\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\GroupsAndProviders\\Presentation\\Presentation.csproj",
+      "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Presentation\\Presentation.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\GroupsAndProviders\\Presentation\\obj\\",
+      "outputPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
