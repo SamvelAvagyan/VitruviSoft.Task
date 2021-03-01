@@ -1,0 +1,9 @@
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\bin\Debug\netcoreapp3.1\BusinessObjects.deps.json
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\bin\Debug\netcoreapp3.1\BusinessObjects.dll
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\bin\Debug\netcoreapp3.1\BusinessObjects.pdb
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\obj\Debug\netcoreapp3.1\BusinessObjects.csprojAssemblyReference.cache
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\obj\Debug\netcoreapp3.1\BusinessObjects.AssemblyInfoInputs.cache
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\obj\Debug\netcoreapp3.1\BusinessObjects.AssemblyInfo.cs
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\obj\Debug\netcoreapp3.1\BusinessObjects.csproj.CoreCompileInputs.cache
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\obj\Debug\netcoreapp3.1\BusinessObjects.dll
+C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessObjects\obj\Debug\netcoreapp3.1\BusinessObjects.pdb
