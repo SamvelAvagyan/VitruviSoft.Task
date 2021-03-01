@@ -4,6 +4,6 @@ namespace BusinessObjects
 {
     public class Group : BaseModel
     {
-        public List<Provider> Providers { get; set; }
+        public ICollection<Provider> Providers { get; set; }
     }
 }
