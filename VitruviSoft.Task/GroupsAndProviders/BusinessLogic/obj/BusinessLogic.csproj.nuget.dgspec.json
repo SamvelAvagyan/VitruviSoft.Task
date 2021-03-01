@@ -30,6 +30,70 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj"
+              },
+              "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
+        "projectName": "BusinessObjects",
+        "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,6 +106,79 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj",
+        "projectName": "Data",
+        "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
