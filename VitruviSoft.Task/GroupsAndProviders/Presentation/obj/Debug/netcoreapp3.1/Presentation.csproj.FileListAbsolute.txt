@@ -65,3 +65,10 @@ C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\
 C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\obj\Debug\netcoreapp3.1\Presentation.dll
 C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\obj\Debug\netcoreapp3.1\Presentation.pdb
 C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\obj\Debug\netcoreapp3.1\Presentation.genruntimeconfig.cache
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\bin\Debug\netcoreapp3.1\BusinessLogic.dll
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\bin\Debug\netcoreapp3.1\BusinessLogic.pdb
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\Presentation\obj\Debug\netcoreapp3.1\Presentation.MvcApplicationPartsAssemblyInfo.cs

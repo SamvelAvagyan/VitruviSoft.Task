@@ -31,9 +31,10 @@ namespace Presentation
             services.AddControllers();
             services.AddDbContext<DatabaseContext>(con => con.UseSqlServer(Configuration.GetConnectionString("Local")));
             services.AddScoped<DbContext, DatabaseContext>();
-            services.AddScoped(typeof(BaseRepository<>), typeof(IBaseRepository<>));
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IGroupRepository, GroupRepository>();
             services.AddScoped<IProviderRepository, ProviderRepository>();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -51,6 +52,13 @@ namespace Presentation
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
         }
     }
