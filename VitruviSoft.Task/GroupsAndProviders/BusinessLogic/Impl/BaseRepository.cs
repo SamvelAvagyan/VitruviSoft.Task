@@ -22,13 +22,18 @@ namespace BusinessLogic.Impl
 
         public void Delete(int id)
         {
-            dbContext.Set<T>().Remove(dbContext.Set<T>().Find(id));
+            dbContext.Set<T>().Remove(GetById(id));
             dbContext.SaveChanges();
         }
 
         public IQueryable<T> GetAll()
         {
             return dbContext.Set<T>();
+        }
+
+        public T GetById(int id)
+        {
+            return dbContext.Set<T>().Find(id);
         }
 
         public void Update(T model)

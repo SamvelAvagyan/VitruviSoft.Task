@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj": {}
+    "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj": {
+    "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj",
         "projectName": "BusinessLogic",
-        "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj",
+        "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,11 +31,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
-                "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj"
+              "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj"
               },
-              "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj"
+              "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
+    "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
+        "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -125,14 +125,14 @@
         }
       }
     },
-    "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj": {
+    "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -152,8 +152,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
-                "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj"
+              "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj"
               }
             }
           }

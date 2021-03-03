@@ -1,3 +1,5 @@
+using BusinessLogic;
+using BusinessLogic.Impl;
 using Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -29,6 +31,9 @@ namespace Presentation
             services.AddControllers();
             services.AddDbContext<DatabaseContext>(con => con.UseSqlServer(Configuration.GetConnectionString("Local")));
             services.AddScoped<DbContext, DatabaseContext>();
+            services.AddScoped(typeof(BaseRepository<>), typeof(IBaseRepository<>));
+            services.AddScoped<IGroupRepository, GroupRepository>();
+            services.AddScoped<IProviderRepository, ProviderRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

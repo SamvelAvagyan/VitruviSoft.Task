@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j1mZPIbLdtyAMU8tHU7B8HB/Jo6uPRkYGd7vaD8WRMrtNVJVAjwM1Os+Jj0xSylhdO/1txPYr19Mz7t/2V3yXw==",
+  "dgSpecHash": "C9vm5WHocO9A8oJXvnpRvdRJS7uJX9teDyBPb7qAqBCf3gmTHcjnBF02OZ0m6BQryf+srjdvA2pAn7BEQKIoqQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\UnitTest\\UnitTest.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\UnitTest\\UnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

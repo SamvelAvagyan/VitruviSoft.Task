@@ -8183,11 +8183,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\UnitTest\\UnitTest.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\UnitTest\\UnitTest.csproj",
       "projectName": "UnitTest",
-      "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\UnitTest\\UnitTest.csproj",
+      "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\UnitTest\\UnitTest.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\UnitTest\\obj\\",
+      "outputPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\UnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8207,8 +8207,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj": {
-              "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj"
+            "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj": {
+              "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj"
             }
           }
         }

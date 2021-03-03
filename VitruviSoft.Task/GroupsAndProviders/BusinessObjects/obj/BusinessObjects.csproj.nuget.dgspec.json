@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {}
+    "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
+    "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
+        "projectPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

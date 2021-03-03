@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l0G/uYeTG8Qd/K/qHsLWL1qJL3RKNUu9o4I5NCyBujMT8/S7vm8NQVyh/OIWmK7zZDxYtBqVd8/r0FL3Bk5bBw==",
+  "dgSpecHash": "+daRMFaveFtzvxx9dOgruoeF9bqyTHh6neVzVJGXfUt4uZF1n7S3aL8sF3TX4JptP/L/i7xao38RGj3cNjgSSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\BusinessLogic\\BusinessLogic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

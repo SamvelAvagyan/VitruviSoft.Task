@@ -2,6 +2,6 @@
 
 namespace BusinessLogic
 {
-    interface IGroupRepository : IBaseRepository<Group>
+    public interface IGroupRepository : IBaseRepository<Group>
     { }
 }

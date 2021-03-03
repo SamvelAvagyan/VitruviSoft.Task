@@ -7,3 +7,8 @@ C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\
 C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.csproj.CoreCompileInputs.cache
 C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.dll
 C:\Users\Acer\Source\Repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.pdb
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessLogic\bin\Debug\netcoreapp3.1\BusinessObjects.dll
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessLogic\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessLogic\bin\Debug\netcoreapp3.1\BusinessObjects.pdb
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessLogic\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\Acer\source\repos\VitruviSoft.Task\VitruviSoft.Task\GroupsAndProviders\BusinessLogic\obj\Debug\netcoreapp3.1\BusinessLogic.csproj.CopyComplete

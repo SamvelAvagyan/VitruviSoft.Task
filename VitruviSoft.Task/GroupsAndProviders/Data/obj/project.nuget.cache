@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5csTQsmjazcyeXfJ8ISYvakXFFB/RqgKrqGmveMsteeXZUyRxEnOHqZA3GcAPZcwi53UCnIaMdD66G90ilnFqA==",
+  "dgSpecHash": "PNdPfZhQPNhHNTwPCMr5QHmJVXyoePebSGMp1arCjN8kvvrUXmEXYM7YC2dyjjYaipG0Z/v8ODs8EHUMPkHfRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Source\\Repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\source\\repos\\VitruviSoft.Task\\VitruviSoft.Task\\GroupsAndProviders\\Data\\Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
