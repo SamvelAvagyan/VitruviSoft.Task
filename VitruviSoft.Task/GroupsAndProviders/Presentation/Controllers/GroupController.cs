@@ -1,7 +1,10 @@
 ﻿using BusinessLogic;
 using BusinessObjects;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -12,6 +15,12 @@ namespace Presentation.Controllers
     public class GroupController : ControllerBase
     {
         private readonly IGroupRepository groupRepository;
+
+        public GroupController(IGroupRepository groupRepository)
+        {
+            this.groupRepository = groupRepository;
+        }
+
         // GET: api/<GroupController>
         [HttpGet]
         public IEnumerable<Group> Get()
