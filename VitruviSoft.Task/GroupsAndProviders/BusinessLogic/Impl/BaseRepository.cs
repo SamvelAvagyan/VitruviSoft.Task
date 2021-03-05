@@ -14,9 +14,16 @@ namespace BusinessLogic.Impl
             this.dbContext = dbContext;
         }
 
+        public void Add(T model)
+        {
+            dbContext.Set<T>().Add(model);
+            dbContext.SaveChanges();
+        }
+
         public IQueryable<T> GetAll()
         {
             return dbContext.Set<T>();
         }
+
     }
 }

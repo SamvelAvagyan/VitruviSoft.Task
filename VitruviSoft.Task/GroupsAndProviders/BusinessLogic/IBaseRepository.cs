@@ -5,5 +5,6 @@ namespace BusinessLogic
     public interface IBaseRepository<T>
     {
         IQueryable<T> GetAll();
+        void Add(T model);
     }
 }

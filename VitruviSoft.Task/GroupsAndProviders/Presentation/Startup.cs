@@ -7,10 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Presentation
 {
@@ -27,8 +23,9 @@ namespace Presentation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<DbContext, DatabaseContext>(con => con.UseSqlServer(Configuration.GetConnectionString("Local")));
-            services.AddScoped(typeof(BaseRepository<>), typeof(IBaseRepository<>));
+            services.AddDbContext<DatabaseContext>(con => con.UseSqlServer(Configuration.GetConnectionString("Local")));
+            services.AddScoped<DbContext, DatabaseContext>();
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
             services.AddScoped<IGroupRepository, GroupRepository>();
             services.AddScoped<IProviderRepository, ProviderRepository>();
         }
@@ -54,7 +51,7 @@ namespace Presentation
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Group}/{action=Index}/{id?}");
             });
         }
     }

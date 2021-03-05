@@ -1,5 +1,9 @@
 ﻿using BusinessLogic;
+using BusinessObjects;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 
 namespace Presentation.Controllers
 {
@@ -16,6 +20,28 @@ namespace Presentation.Controllers
         public ActionResult Index()
         {
             return View(groupRepository.GetAll());
+        }
+
+        // GET: StudentController/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: StudentController/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(IFormCollection collection, Group group)
+        {
+            try
+            {
+                groupRepository.Add(group);
+                return RedirectToAction(nameof(Index));
+            }
+            catch(Exception)
+            {
+                return View();
+            }
         }
     }
 }
