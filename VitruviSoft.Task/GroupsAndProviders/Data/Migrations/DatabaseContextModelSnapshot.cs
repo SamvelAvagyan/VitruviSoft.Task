@@ -62,14 +62,11 @@ namespace Data.Migrations
 
             modelBuilder.Entity("BusinessObjects.Provider", b =>
                 {
-                    b.HasOne("BusinessObjects.Group", null)
-                        .WithMany("Providers")
+                    b.HasOne("BusinessObjects.Group", "Group")
+                        .WithMany()
                         .HasForeignKey("GroupId");
-                });
 
-            modelBuilder.Entity("BusinessObjects.Group", b =>
-                {
-                    b.Navigation("Providers");
+                    b.Navigation("Group");
                 });
 #pragma warning restore 612, 618
         }
