@@ -11,7 +11,7 @@ namespace UnitTest
     public class TestGroupRepository
     {
         [TestMethod]
-        public void TestGetAll()
+        public void TestAdd()
         {
             // Arrange
 
