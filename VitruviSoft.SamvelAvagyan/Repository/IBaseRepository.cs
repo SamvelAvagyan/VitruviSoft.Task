@@ -8,5 +8,6 @@ namespace VitruviSoft.SamvelAvagyan.Repository
         IQueryable<T> Actives();
         IQueryable<T> Deleted();
         void Add(T model);
+        bool Delete(int id);
     }
 }
