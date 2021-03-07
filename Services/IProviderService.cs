@@ -4,6 +4,6 @@ namespace VitruviSoft.SamvelAvagyan.Services
 {
     public interface IProviderService
     {
-        IEnumerable<string> ProvidersNames(int id);
+        IEnumerable<string> ProvidersNames(int groupId);
      }
 }
