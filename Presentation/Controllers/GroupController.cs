@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Threading.Tasks;
 using VitruviSoft.SamvelAvagyan.Repository;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
 
@@ -16,9 +17,9 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         }
 
         // GET: GroupController
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View(groupRepository.Actives());
+            return View(await groupRepository.ActivesAsync());
         }
 
         // GET: StudentController/Create
@@ -30,14 +31,36 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // POST: StudentController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection, Group group)
+        public async Task<ActionResult> Create(IFormCollection collection, Group group)
         {
             try
             {
-                groupRepository.Add(group);
+                await groupRepository.AddAsync(group);
                 return RedirectToAction(nameof(Index));
             }
             catch(Exception)
+            {
+                return View();
+            }
+        }
+
+        // GET: StudentController/Delete/5
+        public async Task<ActionResult> Delete(int id)
+        {
+            return View(await groupRepository.GetByIdAsync(id));
+        }
+
+        // POST: StudentController/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                await groupRepository.DeleteAsync(id);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
             {
                 return View();
             }

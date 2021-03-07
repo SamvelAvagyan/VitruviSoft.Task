@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
+using System.Threading.Tasks;
 using VitruviSoft.SamvelAvagyan.Repository;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
 
@@ -19,29 +20,51 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         }
 
         // GET: ProviderController
-        public ActionResult Index()
+        public async Task<ActionResult> Index()
         {
-            return View(providerRepository.Actives());
+            return View(await providerRepository.ActivesAsync());
         }
 
         // GET: StudentController/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
-            ViewBag.Groups = new SelectList(groupRepository.Actives(), "Id", "Name");
+            ViewBag.Groups = new SelectList(await groupRepository.ActivesAsync(), "Id", "Name");
             return View();
         }
 
         // POST: StudentController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection, Provider provider)
+        public async Task<ActionResult> Create(IFormCollection collection, Provider provider)
         {
             try
             {
-                providerRepository.Add(provider);
+                await providerRepository.AddAsync(provider);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception)
+            {
+                return View();
+            }
+        }
+
+        // GET: StudentController/Delete/5
+        public async Task<ActionResult> Delete(int id)
+        {
+            return View(await providerRepository.GetByIdAsync(id));
+        }
+
+        // POST: StudentController/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Delete(int id, IFormCollection collection)
+        {
+            try
+            {
+                await providerRepository.DeleteAsync(id);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
             {
                 return View();
             }
