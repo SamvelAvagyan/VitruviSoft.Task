@@ -17,6 +17,7 @@ namespace VitruviSoft.SamvelAvagyan.Repository.Infrastructure.Configurations
             builder.Property(x => x.GroupId).HasColumnName("GroupId").IsRequired();
             builder.Property(x => x.Active).HasColumnName("Active").IsRequired();
             builder.Property(x => x.CreatedOn).HasColumnName("CreatedOn").IsRequired();
+            builder.Property(x => x.ModifiedOn).HasColumnName("ModifiedOn").IsRequired();
         }
     }
 }
