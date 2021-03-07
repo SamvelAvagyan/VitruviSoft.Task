@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using VitruviSoft.SamvelAvagyan.Presentation.Models;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
@@ -13,21 +13,20 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
     public class GroupController : Controller
     {
         private readonly IGroupService groupService;
+        private readonly IMapper mapper;
 
-        public GroupController(IGroupService groupService)
+        public GroupController(IGroupService groupService, IMapper mapper)
         {
             this.groupService = groupService;
+            this.mapper = mapper;
         }
 
         // GET: GroupController
         public async Task<ActionResult> Index()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<Group, GroupViewModel>());
-
-            var mapper = new Mapper(config);
-
-            var groups = mapper.Map<List<GroupViewModel>>(await groupService.ActivesAsync());
-            return View(groups);
+            var groups = await groupService.ActivesAsync();
+            var groupsView = groups.Select(g => mapper.Map<GroupViewModel>(g));
+            return View(groupsView);
         }
 
         // GET: StudentController/Create

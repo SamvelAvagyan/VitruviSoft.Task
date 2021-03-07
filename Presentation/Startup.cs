@@ -22,6 +22,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation
             services.AddControllersWithViews();
             services.AddRepository(DataOptions.ConnectionString);
             services.AddAutoMapper(typeof(GroupMappingProfile), typeof(ProviderMappingProfile));
+            services.AddService();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

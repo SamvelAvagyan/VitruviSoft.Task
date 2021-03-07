@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
-using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using VitruviSoft.SamvelAvagyan.Presentation.Models;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
@@ -15,22 +15,21 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
     {
         private readonly IProviderService providerService;
         private readonly IGroupService groupService;
+        private readonly IMapper mapper;
 
-        public ProviderController(IProviderService providerService, IGroupService groupService)
+        public ProviderController(IProviderService providerService, IGroupService groupService, IMapper mapper)
         {
             this.providerService = providerService;
             this.groupService = groupService;
+            this.mapper = mapper;
         }
 
         // GET: ProviderController
         public async Task<ActionResult> Index()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<Provider, ProviderViewModel>());
-
-            var mapper = new Mapper(config);
-
-            var providers = mapper.Map<List<ProviderViewModel>>(await providerService.ActivesAsync());
-            return View(providers);
+            var providers = await groupService.ActivesAsync();
+            var providersView = providers.Select(g => mapper.Map<ProviderViewModel>(g));
+            return View(providersView);
         }
 
         // GET: StudentController/Create
