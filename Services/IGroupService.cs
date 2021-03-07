@@ -4,6 +4,6 @@ namespace VitruviSoft.SamvelAvagyan.Services
 {
     interface IGroupService
     {
-        IEnumerable<string> GetGroupsNames();
+        IEnumerable<string> GroupsNames();
     }
 }

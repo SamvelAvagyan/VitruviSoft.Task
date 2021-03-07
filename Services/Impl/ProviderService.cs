@@ -13,7 +13,7 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
             this.providerRepository = providerRepository;
         }
 
-        public IEnumerable<string> GetProvidersNames(int id)
+        public IEnumerable<string> ProvidersNames(int id)
         {
             return providerRepository
                 .Actives()

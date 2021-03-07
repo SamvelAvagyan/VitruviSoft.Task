@@ -13,7 +13,7 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
             this.groupRepository = groupRepository;
         }
 
-        public IEnumerable<string> GetGroupsNames()
+        public IEnumerable<string> GroupsNames()
         {
             return groupRepository
                 .Actives()
