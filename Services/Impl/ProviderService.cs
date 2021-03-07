@@ -2,7 +2,7 @@
 using System.Linq;
 using VitruviSoft.SamvelAvagyan.Repository;
 
-namespace VitruviSoft.SamvelAvagyan.Services
+namespace VitruviSoft.SamvelAvagyan.Services.Impl
 {
     public class ProviderService : IProviderService
     {
