@@ -22,11 +22,11 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: GroupController
         public async Task<ActionResult> Index()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<Group, GroupDto>());
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Group, GroupViewModel>());
 
             var mapper = new Mapper(config);
 
-            var groups = mapper.Map<List<GroupDto>>(await groupRepository.ActivesAsync());
+            var groups = mapper.Map<List<GroupViewModel>>(await groupRepository.ActivesAsync());
             return View(groups);
         }
 

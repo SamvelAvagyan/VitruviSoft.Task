@@ -1,6 +1,6 @@
-﻿namespace VitruviSoft.SamvelAvagyan.Presentation.Dtos
+﻿namespace VitruviSoft.SamvelAvagyan.Presentation.Models
 {
-    public class GroupDto
+    public class GroupViewModel
     {
         public int Id { get; set; } 
         public string Name { get; set; }
