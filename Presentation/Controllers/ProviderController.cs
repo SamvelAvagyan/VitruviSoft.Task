@@ -5,38 +5,38 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using VitruviSoft.SamvelAvagyan.Presentation.Dtos;
-using VitruviSoft.SamvelAvagyan.Repository;
+using VitruviSoft.SamvelAvagyan.Presentation.Models;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
+using VitruviSoft.SamvelAvagyan.Services;
 
 namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
 {
     public class ProviderController : Controller
     {
-        private readonly IProviderRepository providerRepository;
-        private readonly IGroupRepository groupRepository;
+        private readonly IProviderService providerService;
+        private readonly IGroupService groupService;
 
-        public ProviderController(IProviderRepository providerRepository, IGroupRepository groupRepository)
+        public ProviderController(IProviderService providerService, IGroupService groupService)
         {
-            this.providerRepository = providerRepository;
-            this.groupRepository = groupRepository;
+            this.providerService = providerService;
+            this.groupService = groupService;
         }
 
         // GET: ProviderController
         public async Task<ActionResult> Index()
         {
-            var config = new MapperConfiguration(cfg => cfg.CreateMap<Provider, ProviderDto>());
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Provider, ProviderViewModel>());
 
             var mapper = new Mapper(config);
 
-            var providers = mapper.Map<List<ProviderDto>>(await providerRepository.ActivesAsync());
+            var providers = mapper.Map<List<ProviderViewModel>>(await providerService.ActivesAsync());
             return View(providers);
         }
 
         // GET: StudentController/Create
         public async Task<ActionResult> Create()
         {
-            ViewBag.Groups = new SelectList(await groupRepository.ActivesAsync(), "Id", "Name");
+            ViewBag.Groups = new SelectList(await groupService.ActivesAsync(), "Id", "Name");
             return View();
         }
 
@@ -47,7 +47,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         {
             try
             {
-                await providerRepository.AddAsync(provider);
+                await providerService.AddAsync(provider);
                 return RedirectToAction(nameof(Index));
             }
             catch (Exception)
@@ -59,7 +59,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: StudentController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            return View(await providerRepository.GetByIdAsync(id));
+            return View(await providerService.GetByIdAsync(id));
         }
 
         // POST: StudentController/Delete/5
@@ -69,7 +69,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         {
             try
             {
-                await providerRepository.DeleteAsync(id);
+                await providerService.DeleteAsync(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

@@ -1,11 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using VitruviSoft.SamvelAvagyan.Repository;
-using VitruviSoft.SamvelAvagyan.Repository.Impl;
 
 namespace VitruviSoft.SamvelAvagyan.Presentation
 {
@@ -23,7 +20,6 @@ namespace VitruviSoft.SamvelAvagyan.Presentation
         {
             services.AddControllersWithViews();
             services.AddRepository(DataOptions.ConnectionString);
-            services.AddDbContext(DataOptions.ConnectionString);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

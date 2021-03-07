@@ -9,7 +9,6 @@ namespace Microsoft.Extensions.DependencyInjection
         public static IServiceCollection AddDbContext(this IServiceCollection services, string connectionString)
         {
             services.AddDbContext<DatabaseContext>(con => con.UseSqlServer(connectionString));
-            services.AddScoped<DbContext, DatabaseContext>();
             return services;
         }
 

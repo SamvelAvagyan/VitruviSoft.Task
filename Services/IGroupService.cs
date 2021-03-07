@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using VitruviSoft.SamvelAvagyan.Repository.Models;
 
 namespace VitruviSoft.SamvelAvagyan.Services
 {
-    interface IGroupService
+    public interface IGroupService : IBaseService<Group>
     {
         IEnumerable<string> GroupsNames();
     }

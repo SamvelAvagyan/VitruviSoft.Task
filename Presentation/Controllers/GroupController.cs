@@ -4,19 +4,19 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using VitruviSoft.SamvelAvagyan.Presentation.Dtos;
-using VitruviSoft.SamvelAvagyan.Repository;
+using VitruviSoft.SamvelAvagyan.Presentation.Models;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
+using VitruviSoft.SamvelAvagyan.Services;
 
 namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
 {
     public class GroupController : Controller
     {
-        private readonly IGroupRepository groupRepository;
+        private readonly IGroupService groupService;
 
-        public GroupController(IGroupRepository groupRepository)
+        public GroupController(IGroupService groupService)
         {
-            this.groupRepository = groupRepository;
+            this.groupService = groupService;
         }
 
         // GET: GroupController
@@ -26,7 +26,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
 
             var mapper = new Mapper(config);
 
-            var groups = mapper.Map<List<GroupViewModel>>(await groupRepository.ActivesAsync());
+            var groups = mapper.Map<List<GroupViewModel>>(await groupService.ActivesAsync());
             return View(groups);
         }
 
@@ -43,10 +43,10 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         {
             try
             {
-                await groupRepository.AddAsync(group);
+                await groupService.AddAsync(group);
                 return RedirectToAction(nameof(Index));
             }
-            catch(Exception)
+            catch (Exception)
             {
                 return View();
             }
@@ -55,7 +55,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: StudentController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            return View(await groupRepository.GetByIdAsync(id));
+            return View(await groupService.GetByIdAsync(id));
         }
 
         // POST: StudentController/Delete/5
@@ -65,7 +65,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         {
             try
             {
-                await groupRepository.DeleteAsync(id);
+                await groupService.DeleteAsync(id);
                 return RedirectToAction(nameof(Index));
             }
             catch
