@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using VitruviSoft.SamvelAvagyan.Repository;
-using VitruviSoft.SamvelAvagyan.Repository.Impl;
 
 namespace VitruviSoft.SamvelAvagyan.Presentation
 {
@@ -22,11 +20,8 @@ namespace VitruviSoft.SamvelAvagyan.Presentation
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<DatabaseContext>(con => con.UseSqlServer(Configuration.GetConnectionString("Local")));
-            services.AddScoped<DbContext, DatabaseContext>();
-            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            services.AddScoped<IGroupRepository, GroupRepository>();
-            services.AddScoped<IProviderRepository, ProviderRepository>();
+            services.AddRepository(Configuration.GetConnectionString("Local"));
+            services.AddDbContext(Configuration.GetConnectionString("Local"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
