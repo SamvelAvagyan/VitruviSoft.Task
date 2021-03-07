@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using VitruviSoft.SamvelAvagyan.Presentation.Mappings;
 
 namespace VitruviSoft.SamvelAvagyan.Presentation
 {
@@ -20,11 +21,14 @@ namespace VitruviSoft.SamvelAvagyan.Presentation
         {
             services.AddControllersWithViews();
             services.AddRepository(DataOptions.ConnectionString);
+            services.AddAutoMapper(typeof(GroupMappingProfile), typeof(ProviderMappingProfile));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, AutoMapper.IConfigurationProvider autoMapper)
         {
+            autoMapper.AssertConfigurationIsValid();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

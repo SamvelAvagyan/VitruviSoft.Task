@@ -2,7 +2,7 @@
 using VitruviSoft.SamvelAvagyan.Presentation.Models;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
 
-namespace Presentation.Mappings
+namespace VitruviSoft.SamvelAvagyan.Presentation.Mappings
 {
     public class GroupMappingProfile : Profile
     {
