@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using VitruviSoft.SamvelAvagyan.Repository;
+using VitruviSoft.SamvelAvagyan.Repository.Models;
 
 namespace VitruviSoft.SamvelAvagyan.Services.Impl
 {
     public class BaseService<T> : IBaseService<T>
+        where T : AbstractEntity
     {
         private readonly IBaseRepository<T> baseRepository;
 
@@ -37,6 +39,9 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
 
         public void Add(T model)
         {
+            model.Active = true;
+            model.ModifiedOn = DateTime.Now;
+            model.CreatedOn = DateTime.Now;
             baseRepository.Add(model);
         }
 
@@ -67,6 +72,9 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
 
         public async Task AddAsync(T model)
         {
+            model.Active = true;
+            model.ModifiedOn = DateTime.Now;
+            model.CreatedOn = DateTime.Now;
             await baseRepository.AddAsync(model);
         }
 

@@ -27,7 +27,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: ProviderController
         public async Task<ActionResult> Index()
         {
-            var providers = await groupService.ActivesAsync();
+            var providers = await providerService.ActivesAsync();
             var providersView = providers.Select(g => mapper.Map<ProviderViewModel>(g));
             return View(providersView);
         }

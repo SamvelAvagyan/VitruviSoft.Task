@@ -7,10 +7,7 @@ namespace Microsoft.Extensions.DependencyInjection
     public static class ServiceCollectionExtensions
     {
         public static IServiceCollection AddDbContext(this IServiceCollection services, string connectionString)
-        {
-            services.AddDbContext<DatabaseContext>(con => con.UseSqlServer(connectionString));
-            return services;
-        }
+            => services.AddDbContext<DatabaseContext>(con => con.UseSqlServer(connectionString));
 
         public static IServiceCollection AddRepositoryContracts(this IServiceCollection services)
             => services
