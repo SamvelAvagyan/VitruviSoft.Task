@@ -2,7 +2,7 @@
 
 namespace VitruviSoft.SamvelAvagyan.Repository.Models
 {
-    public class AbstractEntity
+    public abstract class AbstractEntity
     {
         public int Id { get; set; }
         public bool Active { get; set; }
