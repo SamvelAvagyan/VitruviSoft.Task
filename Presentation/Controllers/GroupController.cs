@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+using VitruviSoft.SamvelAvagyan.Presentation.Dtos;
 using VitruviSoft.SamvelAvagyan.Repository;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
 
@@ -19,7 +22,12 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: GroupController
         public async Task<ActionResult> Index()
         {
-            return View(await groupRepository.ActivesAsync());
+            var config = new MapperConfiguration(cfg => cfg.CreateMap<Group, GroupDto>());
+
+            var mapper = new Mapper(config);
+
+            var groups = mapper.Map<List<GroupDto>>(await groupRepository.ActivesAsync());
+            return View(groups);
         }
 
         // GET: StudentController/Create
