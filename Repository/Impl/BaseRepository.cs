@@ -92,7 +92,7 @@ namespace VitruviSoft.SamvelAvagyan.Repository.Impl
 
         public async Task<bool> DeleteAsync(int id)
         {
-            var model = AllAsync().Result.FirstOrDefault(p => p.Id == id);
+            var model = await GetByIdAsync(id);
             if (model == null)
                 throw new ArgumentException("Invalid Id");
             model.Active = false;

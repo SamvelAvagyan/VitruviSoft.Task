@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using VitruviSoft.SamvelAvagyan.Repository;
 using VitruviSoft.SamvelAvagyan.Repository.Models;
@@ -10,31 +9,31 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
     public class BaseService<T> : IBaseService<T>
         where T : AbstractEntity
     {
-        private readonly IBaseRepository<T> baseRepository;
+        private readonly IBaseRepository<T> repository;
 
         public BaseService(IBaseRepository<T> baseRepository)
         {
-            this.baseRepository = baseRepository;
+            this.repository = baseRepository;
         }
 
         public IEnumerable<T> Actives()
         {
-            return baseRepository.Actives();
+            return repository.Actives();
         }
 
         public IEnumerable<T> All()
         {
-            return baseRepository.All();
+            return repository.All();
         }
 
         public IEnumerable<T> Deleted()
         {
-            return baseRepository.Deleted();
+            return repository.Deleted();
         }
 
         public T GetById(int id)
         {
-            return baseRepository.GetById(id);
+            return repository.GetById(id);
         }
 
         public void Add(T model)
@@ -42,32 +41,32 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
             model.Active = true;
             model.ModifiedOn = DateTime.Now;
             model.CreatedOn = DateTime.Now;
-            baseRepository.Add(model);
+            repository.Add(model);
         }
 
         public bool Delete(int id)
         {
-            return baseRepository.Delete(id);
+            return repository.Delete(id);
         }
 
         public async Task<IEnumerable<T>> AllAsync()
         {
-            return await baseRepository.AllAsync();
+            return await repository.AllAsync();
         }
 
         public async Task<IEnumerable<T>> ActivesAsync()
         {
-            return await baseRepository.ActivesAsync();
+            return await repository.ActivesAsync();
         }
 
         public async Task<IEnumerable<T>> DeletedAsync()
         {
-            return await baseRepository.DeletedAsync();
+            return await repository.DeletedAsync();
         }
 
         public async Task<T> GetByIdAsync(int id)
         {
-            return await baseRepository.GetByIdAsync(id);
+            return await repository.GetByIdAsync(id);
         }
 
         public async Task AddAsync(T model)
@@ -75,12 +74,12 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
             model.Active = true;
             model.ModifiedOn = DateTime.Now;
             model.CreatedOn = DateTime.Now;
-            await baseRepository.AddAsync(model);
+            await repository.AddAsync(model);
         }
 
         public async Task<bool> DeleteAsync(int id)
         {
-            return await baseRepository.DeleteAsync(id);
+            return await repository.DeleteAsync(id);
         }
     }
 }
