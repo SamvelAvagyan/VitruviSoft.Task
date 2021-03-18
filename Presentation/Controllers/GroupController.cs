@@ -74,5 +74,27 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
                 return View();
             }
         }
+
+        // GET: StudentController/Edit/5
+        public async Task<ActionResult> Edit(int id)
+        {
+            return View(await groupService.GetByIdAsync(id));
+        }
+
+        // POST: StudentController/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Edit(Group group, IFormCollection collection)
+        {
+            try
+            {
+                await groupService.UpdateAsync(group);
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
     }
 }

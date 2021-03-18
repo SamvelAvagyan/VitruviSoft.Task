@@ -11,9 +11,9 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
     {
         private readonly IBaseRepository<T> repository;
 
-        public BaseService(IBaseRepository<T> baseRepository)
+        public BaseService(IBaseRepository<T> repository)
         {
-            this.repository = baseRepository;
+            this.repository = repository;
         }
 
         public IEnumerable<T> Actives()
@@ -49,6 +49,11 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
             return repository.Delete(id);
         }
 
+        public void Update(T model)
+        {
+            repository.Update(model);
+        }
+
         public async Task<IEnumerable<T>> AllAsync()
         {
             return await repository.AllAsync();
@@ -80,6 +85,11 @@ namespace VitruviSoft.SamvelAvagyan.Services.Impl
         public async Task<bool> DeleteAsync(int id)
         {
             return await repository.DeleteAsync(id);
+        }
+
+        public async Task UpdateAsync(T model)
+        {
+            await repository.UpdateAsync(model);
         }
     }
 }

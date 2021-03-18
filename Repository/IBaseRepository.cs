@@ -11,11 +11,13 @@ namespace VitruviSoft.SamvelAvagyan.Repository
         T GetById(int id);
         void Add(T model);
         bool Delete(int id);
+        void Update(T model);
         Task<IQueryable<T>> AllAsync();
         Task<IQueryable<T>> ActivesAsync();
         Task<IQueryable<T>> DeletedAsync();
         Task<T> GetByIdAsync(int id);
         Task AddAsync(T model);
         Task<bool> DeleteAsync(int id);
+        Task UpdateAsync(T model);
     }
 }
