@@ -21,6 +21,7 @@ namespace VitruviSoft.SamvelAvagyan.Presentation
         {
             services.AddControllersWithViews();
             services.AddAutoMapper(typeof(ModelViewModelMappingProfile));
+            //services.AddAutoMapper(typeof(ViewModelModelMappingProfile));
             services.AddService(DataOptions.ConnectionString);
         }
 

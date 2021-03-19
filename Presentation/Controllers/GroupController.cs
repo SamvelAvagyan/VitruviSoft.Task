@@ -40,10 +40,11 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // POST: StudentController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(IFormCollection collection, Group group)
+        public async Task<ActionResult> Create(IFormCollection collection, GroupViewModel groupViewModel)
         {
             try
             {
+                var group = mapper.Map<Group>(groupViewModel);
                 await groupService.AddAsync(group);
                 return RedirectToAction(nameof(Index));
             }
@@ -56,7 +57,8 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: StudentController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            return View(await groupService.GetByIdAsync(id));
+            var groupViewModel = mapper.Map<GroupViewModel>(await groupService.GetByIdAsync(id));
+            return View(groupViewModel);
         }
 
         // POST: StudentController/Delete/5
@@ -78,16 +80,18 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: StudentController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
-            return View(await groupService.GetByIdAsync(id));
+            var groupViewModel = mapper.Map<GroupViewModel>(await groupService.GetByIdAsync(id));
+            return View(groupViewModel);
         }
 
         // POST: StudentController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(Group group, IFormCollection collection)
+        public async Task<ActionResult> Edit(IFormCollection collection, GroupViewModel groupViewModel)
         {
             try
             {
+                var group = mapper.Map<Group>(groupViewModel);
                 await groupService.UpdateAsync(group);
                 return RedirectToAction(nameof(Index));
             }

@@ -35,17 +35,20 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: StudentController/Create
         public async Task<ActionResult> Create()
         {
-            ViewBag.Groups = new SelectList(await groupService.ActivesAsync(), "Id", "Name");
+            var groups = await groupService.ActivesAsync();
+            var groupsView = groups.Select(g => mapper.Map<GroupViewModel>(g));
+            ViewBag.Groups = new SelectList(groups, "Id", "Name");
             return View();
         }
 
         // POST: StudentController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create(IFormCollection collection, Provider provider)
+        public async Task<ActionResult> Create(IFormCollection collection, ProviderViewModel providerViewModel)
         {
             try
             {
+                var provider = mapper.Map<Provider>(providerViewModel);
                 await providerService.AddAsync(provider);
                 return RedirectToAction(nameof(Index));
             }
@@ -58,7 +61,8 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: StudentController/Delete/5
         public async Task<ActionResult> Delete(int id)
         {
-            return View(await providerService.GetByIdAsync(id));
+            var providerViewModel = mapper.Map<ProviderViewModel>(await providerService.GetByIdAsync(id));
+            return View(providerViewModel);
         }
 
         // POST: StudentController/Delete/5
@@ -80,17 +84,21 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Controllers
         // GET: StudentController/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
-            ViewBag.Groups = new SelectList(await groupService.ActivesAsync(), "Id", "Name");
-            return View(await providerService.GetByIdAsync(id));
+            var groups = await groupService.ActivesAsync();
+            var groupsView = groups.Select(g => mapper.Map<GroupViewModel>(g));
+            ViewBag.Groups = new SelectList(groups, "Id", "Name");
+            var providerViewModel = mapper.Map<ProviderViewModel>(await providerService.GetByIdAsync(id));
+            return View(providerViewModel);
         }
 
         // POST: StudentController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit(Provider provider, IFormCollection collection)
+        public async Task<ActionResult> Edit(IFormCollection collection, ProviderViewModel providerViewModel)
         {
             try
             {
+                var provider = mapper.Map<Provider>(providerViewModel);
                 await providerService.UpdateAsync(provider);
                 return RedirectToAction(nameof(Index));
             }

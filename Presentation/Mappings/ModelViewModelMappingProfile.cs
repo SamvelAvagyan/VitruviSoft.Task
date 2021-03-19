@@ -11,13 +11,15 @@ namespace VitruviSoft.SamvelAvagyan.Presentation.Mappings
             CreateMap<Group, GroupViewModel>()
                 .ForMember(m => m.Id, cfg => cfg.MapFrom(vm => vm.Id))
                 .ForMember(m => m.Name, cfg => cfg.MapFrom(vm => vm.Name))
-                .ForMember(m => m.Type, cfg => cfg.MapFrom(vm => vm.Type));
+                .ForMember(m => m.Type, cfg => cfg.MapFrom(vm => vm.Type))
+                .ReverseMap();
 
             CreateMap<Provider, ProviderViewModel>()
                 .ForMember(m => m.Id, cfg => cfg.MapFrom(vm => vm.Id))
                 .ForMember(m => m.Name, cfg => cfg.MapFrom(vm => vm.Name))
                 .ForMember(m => m.Type, cfg => cfg.MapFrom(vm => vm.Type))
-                .ForMember(m => m.GroupId, cfg => cfg.MapFrom(vm => vm.GroupId));
+                .ForMember(m => m.GroupId, cfg => cfg.MapFrom(vm => vm.GroupId))
+                .ReverseMap();
         }
     }
 }
